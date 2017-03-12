@@ -1,0 +1,14 @@
+{
+  "autoload":{
+    "psr-4":{
+      "Itb\\":"src/"
+    }
+  },
+  "scripts":{
+    "doc": "php phpDocumentor.phar -d ./src -t ./src/documentation",
+
+    "test":"php phpunit.phar",
+    "coverage":"php phpunit.phar --configuration phpunit_coverage.xml",
+    "isolate":"php phpunit.phar --configuration phpunit_isolate.xml"
+  }
+}
