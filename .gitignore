@@ -50,5 +50,9 @@ Temporary Items
 # additional ignores specific to web3project
 vendor/
 build/
-.phar
-.xml
+tests/
+phpDocumentor.phar
+phpunit.phar
+phpunit.xml
+phpunit_coverage.xml
+phpunit_isolate.xml
