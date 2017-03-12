@@ -5,7 +5,7 @@ define('DB_NAME', 'web3project');
 define('DB_USER', 'fred');
 define('DB_PASS', 'blckD0g');
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/User.php';
 
 function connect_to_db()
 {
@@ -24,11 +24,5 @@ function connect_to_db()
 
 $u = new \Itb\User();
 $u->getAllUsers();
+var_dump($u);
 
-while($row = $u->getAllUsers())
-{
-    echo $row['username'] . PHP_EOL;
-    echo $row['firstName'] . PHP_EOL;
-    echo $row['lastName'] . PHP_EOL;
-    echo $row['role'] . PHP_EOL;
-}
