@@ -10,5 +10,8 @@
     "test":"php phpunit.phar",
     "coverage":"php phpunit.phar --configuration phpunit_coverage.xml",
     "isolate":"php phpunit.phar --configuration phpunit_isolate.xml"
+  },
+  "require": {
+    "silex/silex": "^2.0"
   }
 }
