@@ -12,6 +12,7 @@
     "isolate":"php phpunit.phar --configuration phpunit_isolate.xml"
   },
   "require": {
+    "twig/twig": "^1.32",
     "silex/silex": "^2.0"
   }
 }
