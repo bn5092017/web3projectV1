@@ -1,0 +1,10 @@
+TAP version 13
+ok 1 - ItbTest\RefTest::testConnectionToDatabase
+ok 2 - ItbTest\RefTest::testCanGetAllRefs
+ok 3 - ItbTest\RefTest::testCanGetOneRefById
+ok 4 - ItbTest\RefTest::testCanGetAllRefsForUserWithThisId
+not ok 5 - Error: ItbTest\UserTest::testConnectionToDatabase
+not ok 6 - Error: ItbTest\UserTest::testCanCreateNewUserWithConstructor
+ok 6 - # SKIP This test depends on "ItbTest\UserTest::testCanCreateNewUserWithConstructor" to pass.
+not ok 7 - Error: ItbTest\UserTest::testCanGetOneUser
+1..7

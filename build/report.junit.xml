@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="mattsmithdev Test Suite" tests="6" assertions="4" failures="0" errors="3" time="0.040000">
+    <testsuite name="ItbTest\RefTest" file="C:\laragon\www\web3project\tests\RefTest.php" tests="4" assertions="4" failures="0" errors="0" time="0.030000">
+      <testcase name="testConnectionToDatabase" class="ItbTest\RefTest" file="C:\laragon\www\web3project\tests\RefTest.php" line="11" assertions="1" time="0.020000"/>
+      <testcase name="testCanGetAllRefs" class="ItbTest\RefTest" file="C:\laragon\www\web3project\tests\RefTest.php" line="27" assertions="1" time="0.000000"/>
+      <testcase name="testCanGetOneRefById" class="ItbTest\RefTest" file="C:\laragon\www\web3project\tests\RefTest.php" line="39" assertions="1" time="0.010000"/>
+      <testcase name="testCanGetAllRefsForUserWithThisId" class="ItbTest\RefTest" file="C:\laragon\www\web3project\tests\RefTest.php" line="51" assertions="1" time="0.000000"/>
+    </testsuite>
+    <testsuite name="ItbTest\UserTest" file="C:\laragon\www\web3project\tests\UserTest.php" tests="2" assertions="0" failures="0" errors="3" time="0.010000">
+      <testcase name="testConnectionToDatabase" class="ItbTest\UserTest" file="C:\laragon\www\web3project\tests\UserTest.php" line="9" assertions="0" time="0.010000">
+        <error type="PHPUnit_Framework_Error_Warning">ItbTest\UserTest::testConnectionToDatabase
+Missing argument 1 for ItbTest\UserTest::testConnectionToDatabase()
+
+C:\laragon\www\web3project\tests\UserTest.php:9
+</error>
+      </testcase>
+      <testcase name="testCanCreateNewUserWithConstructor" class="ItbTest\UserTest" file="C:\laragon\www\web3project\tests\UserTest.php" line="25" assertions="0" time="0.000000">
+        <error type="PHPUnit_Framework_Error_Notice">ItbTest\UserTest::testCanCreateNewUserWithConstructor
+Constant DB_HOST already defined
+
+C:\laragon\www\web3project\tests\UserTest.php:36
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>

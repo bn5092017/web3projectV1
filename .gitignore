@@ -49,8 +49,6 @@ Temporary Items
 
 # additional ignores specific to web3project
 vendor/
-build/
-tests/
 phpDocumentor.phar
 phpunit.phar
 phpunit.xml
