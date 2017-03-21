@@ -3,8 +3,10 @@ ok 1 - ItbTest\RefTest::testConnectionToDatabase
 ok 2 - ItbTest\RefTest::testCanGetAllRefs
 ok 3 - ItbTest\RefTest::testCanGetOneRefById
 ok 4 - ItbTest\RefTest::testCanGetAllRefsForUserWithThisId
-not ok 5 - Error: ItbTest\UserTest::testConnectionToDatabase
-not ok 6 - Error: ItbTest\UserTest::testCanCreateNewUserWithConstructor
-ok 6 - # SKIP This test depends on "ItbTest\UserTest::testCanCreateNewUserWithConstructor" to pass.
-not ok 7 - Error: ItbTest\UserTest::testCanGetOneUser
-1..7
+ok 5 - ItbTest\RefTest::testCanCreateNewRef
+ok 6 - ItbTest\RefTest::testCanDeleteRefById
+not ok 7 - Error: ItbTest\UserTest::testConnectionToDatabase
+not ok 8 - Error: ItbTest\UserTest::testCanCreateNewUserWithConstructor
+ok 8 - # SKIP This test depends on "ItbTest\UserTest::testCanCreateNewUserWithConstructor" to pass.
+not ok 9 - Error: ItbTest\UserTest::testCanGetOneUser
+1..9

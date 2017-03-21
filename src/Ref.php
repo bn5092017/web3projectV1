@@ -58,4 +58,36 @@ class Ref
 
         return $statement;
     }
+
+    public function createNewRef($userId, $authors, $title, $year, $publisher, $placeOfPub, $pages, $textSummary, $status)
+    {
+        $connection = $this->connectToDb();
+
+        $sql = $connection->prepare('INSERT INTO ref VALUES (NULL, :userId, :authors, :title, :year, :publisher, :placeOfPub, :pages, :textSummary, :status, NOW(), NOW())');
+
+        $sql->execute([':userId' => $userId,
+            ':authors' => $authors,
+            ':title' => $title,
+            ':year' => $year,
+            ':publisher' => $publisher,
+            ':placeOfPub' => $placeOfPub,
+            ':pages' => $pages,
+            ':textSummary' => $textSummary,
+            ':status' => $status]);
+        $affectedRows = $sql->rowCount();
+
+        return $affectedRows;
+    }
+
+    public function deleteRefById($id)
+    {
+        $connection = $this->connectToDb();
+
+        $sql = $connection->prepare('DELETE FROM ref WHERE id=:id');
+
+        $sql->execute([':id' => $id]);
+        $affectedRows = $sql->rowCount();
+
+        return $affectedRows;
+    }
 }

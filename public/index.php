@@ -5,7 +5,7 @@ define('DB_NAME', 'web3project');
 define('DB_USER', 'fred');
 define('DB_PASS', 'blckD0g');
 
-require_once __DIR__ . '/../src/User.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 function connect_to_db()
 {
@@ -22,7 +22,7 @@ function connect_to_db()
     return $conn;
 }
 
-$u = new \Itb\User();
-$u->getAllUsers();
+$u = new \Itb\Ref();
+$u->getAllRefs();
 var_dump($u);
 

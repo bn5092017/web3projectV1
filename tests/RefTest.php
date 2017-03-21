@@ -59,4 +59,30 @@ class RefTest extends \PHPUnit_Framework_TestCase
         //Assert
         $this->assertNotNull($refs);
     }
+
+    public function testCanCreateNewRef()
+    {
+        //Arrange
+        $r = new Ref();
+        $expected = 1;
+
+        //Act
+        $refs = $r->createNewRef(3, 'authors', 'title', 'year', 'publisher', 'placeOfPub', 'pages', 'textSummary', 'public');
+
+        //Assert
+        $this->assertEquals($expected, $refs);
+    }
+
+    public function testCanDeleteRefById()
+    {
+        //Arrange
+        $r = new Ref();
+        $expected = 1;
+
+        //Act
+        $refs = $r->deleteRefById(8);
+
+        //Assert
+        $this->assertEquals($expected, $refs);
+    }
 }
